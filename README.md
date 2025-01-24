@@ -1,6 +1,6 @@
 # Screenshot to Markdown Automator
 
-If you take a lot of screenshots for note-taking, manually adding them to your markdown files can be tedious. This script automates the process by detecting new screenshots in a folder and appending them to a markdown file.
+If you are a student or a working professional who takes a lot of screenshots for note-taking, manually adding them to your markdown files can be tedious. This script automates the process by detecting new screenshots in a folder and appending them to a markdown file.
 
 ## Features
 - Monitors a specified folder for new screenshots.
@@ -22,8 +22,8 @@ If you take a lot of screenshots for note-taking, manually adding them to your m
 ### Configuration
 Edit these variables in the script:
 ```python
-screenshot_dir = "your_location"  # Folder where screenshots are saved
-markdown_file = "filename.md"      # Markdown file to update
+screenshot_dir = "your_location"
+markdown_file = "filename.md"      
 ```
 
 ### Running the Script
@@ -47,22 +47,3 @@ def monitor_screenshots():
 ```
 - Checks the folder every 30 seconds for new images.
 - If new files are found, it updates the markdown file.
-
-### Running the Script
-```python
-if __name__ == "__main__":
-```
-- Starts monitoring and runs continuously until stopped.
-
-## Why Use This?
-- Saves time by automating markdown updates.
-- Works well with markdown-based workflows like Neovim.
-- Simple and lightweight.
-
-## Possible Improvements
-- Custom timestamp formatting.
-- Adjustable check intervals.
-- GUI version for easier use.
-
-This script makes note-taking more efficient by removing the need for manual screenshot insertion. Just let it run in the background and focus on your work!
-
